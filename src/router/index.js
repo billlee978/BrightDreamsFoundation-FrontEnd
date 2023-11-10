@@ -221,7 +221,20 @@ export const constantRoutes = [
         path: 'index',
         name: 'mission',
         component: () => import('@/views/mission/index'),
-        meta: { title: '任务发布', icon: 'el-icon-s-order' }
+        meta: { title: '任务管理', icon: 'el-icon-s-order' }
+      }
+    ]
+  },
+
+  {
+    path: '/good',
+    component: Layout,
+    children: [
+      {
+        path: 'index',
+        name: 'good',
+        component: () => import('@/views/good/index'),
+        meta: { title: '商品管理', icon: 'el-icon-s-goods' }
       }
     ]
   },
